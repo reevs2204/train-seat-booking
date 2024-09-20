@@ -1,0 +1,45 @@
+p {
+  font-family: Lato;
+}
+
+.container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.booking-form {
+  margin-bottom: 20px;
+}
+
+.coach {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  margin: 2px;
+  background-color: green;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.seat.booked {
+  background-color: red;
+  cursor: not-allowed;
+}
+
+.seat.selected {
+  background-color: blue;
+}

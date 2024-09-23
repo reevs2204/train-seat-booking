@@ -18,12 +18,15 @@
     <!-- Loop through rows of seats -->
     <div *ngFor="let row of getRows(); let rowIndex = index" class="row">
       <!-- Loop through seats in each row -->
+       <!-- Apply booked class if seat is taken -->
+       <!-- Apply selected class if seat is chosen -->
       <div
         *ngFor="let seat of getSeatsInRow(rowIndex + 1)"
         [ngClass]="{
           seat: true,
-          booked: seat.isBooked, <!-- Apply booked class if seat is taken -->
-          selected: selectedSeats.includes(seat) <!-- Apply selected class if seat is chosen -->
+          booked: seat.isBooked, 
+         
+          selected: selectedSeats.includes(seat) 
         }"
       >
         <!-- Display seat ID -->

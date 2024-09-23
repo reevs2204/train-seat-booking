@@ -1,33 +1,33 @@
 p {
-  font-family: Lato;
+  font-family: Lato; /* Lato font for paragraphs */
 }
 
 .container {
-  text-align: center;
+  text-align: center; /* Center content */
   font-family: Arial, sans-serif;
 }
 
 .booking-form {
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Space below form */
 }
 
 .coach {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* Center rows */
 }
 
 .row {
   display: flex;
   justify-content: center;
-  margin: 5px 0;
+  margin: 5px 0; /* Space between rows */
 }
 
 .seat {
   width: 40px;
   height: 40px;
   margin: 2px;
-  background-color: green;
+  background-color: green; /* Available seat color */
   color: white;
   line-height: 40px;
   text-align: center;
@@ -36,10 +36,10 @@ p {
 }
 
 .seat.booked {
-  background-color: red;
+  background-color: red; /* Booked seat color */
   cursor: not-allowed;
 }
 
 .seat.selected {
-  background-color: blue;
+  background-color: blue; /* Selected seat color */
 }
